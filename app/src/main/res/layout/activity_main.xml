@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tev_first_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center|start"
+            android:text="하루에 한번"
+            android:textColor="#00BCD4"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tev_second_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:text="마음을 울리는"
+            android:textColor="#00BCD4"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tev_third_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:text="문장을"
+            android:textColor="#00BCD4"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tev_fourth_sentence"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center|end"
+            android:text="새겨보세요"
+            android:textColor="#00BCD4"
+            android:textSize="50dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="시작하기"
+        android:layout_gravity="center"
+        android:onClick="onclick"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:text="My"
+            android:textSize="40sp"
+            android:onClick="onclick"/>
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:text="시간"
+            android:textSize="40sp"
+            android:onClick="onclick"/>
+
+        <ToggleButton
+            android:id="@+id/btn_popup"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:textOn="pop up on"
+            android:textOff="pop up off"
+            android:textSize="20sp"
+            android:onClick="onToggleClicked"/>
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|start"
+            android:text="설정"
+            android:textSize="40sp"
+            android:onClick="onclick"/>
+    </LinearLayout>
+
+
+</LinearLayout>
